@@ -1,0 +1,28 @@
+/* Responsive styles for listings page trendy icons */
+
+#filters {
+    justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+    #filters {
+        justify-content: center !important;
+    }
+    .filter {
+        flex: 0 0 30% !important;
+        margin: 0.5rem 0.5rem !important;
+        font-size: 0.75rem !important;
+        text-align: center !important;
+    }
+    .filter div i {
+        font-size: 1.5rem !important;
+    }
+    .tax-toggle {
+        width: 100% !important;
+        margin-top: 1rem !important;
+        text-align: center !important;
+    }
+    .form-check-label {
+        font-size: 0.85rem !important;
+    }
+}
