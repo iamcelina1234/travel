@@ -29,7 +29,7 @@ module.exports.signupUser = async(req,res)=>{
 
 
 module.exports.login = async (req, res) => {
-        req.flash("success", "Welcome to Wanderlust, You logged in !!");
+        req.flash("success", "Welcome to travelshalk, You logged in !!");
         let redirectUrl = res.locals.redirectUrl || "/listings";
         res.redirect(redirectUrl); // fallback
     };
