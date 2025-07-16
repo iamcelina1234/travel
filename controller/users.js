@@ -17,7 +17,7 @@ module.exports.signupUser = async(req,res)=>{
        console.log(registeredUser) ;
        req.login(registeredUser, (err) => {
         if (err) return next(err);
-        req.flash("success", "Welcome to Encrypted travels" );
+        req.flash("success", "Welcome to Travelshalk" );
         res.redirect( "/listings"); // fallback
     });     
     }catch(e){
@@ -29,7 +29,7 @@ module.exports.signupUser = async(req,res)=>{
 
 
 module.exports.login = async (req, res) => {
-        req.flash("success", "Welcome to travelshalk, You logged in !!");
+        req.flash("success", "Welcome to Travelshalk, You logged in !!");
         let redirectUrl = res.locals.redirectUrl || "/listings";
         res.redirect(redirectUrl); // fallback
     };
